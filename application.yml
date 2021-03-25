@@ -1,0 +1,15 @@
+app:
+  version: "@project.version@"
+  description: "@project.description@"
+  swagger-packages: com.trinasolar.johnson.ems.iot.server
+
+spring:
+  application:
+    name: ems-iot-server${COMPUTERNAME:}
+  cloud:
+    config:
+      profile: iot-server
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
